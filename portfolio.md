@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Portfolio"
-permalink: /portfolio/
+title: "Portfolio Images"
+permalink: /portfolioimages/
 ---
-#Content for portfolio goes here
+#Content for portfolio images go here
 
