@@ -10,21 +10,21 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Branden in a Flash: Developer Portfolio"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+subtitle                 : "Coding the Future, One Line at a Time"
+name                     : "Branden Maxwell"
+description              : "Welcome to my developer portfolio! I specialize in creating innovative software solutions with expertise in Java, Python, .NET, and C++. Explore my projects showcasing full-stack development, problem-solving, and creative coding. From dynamic applications to real-world problem-solving tools, I bring ideas to life through technology. Let’s connect and build something extraordinary together."
+url                      : "https://maxtheflash.github.io"
+baseurl                  : ""
+repository               : "Maxtheflash/maxtheflash.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -99,10 +99,10 @@ og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
+  email: "Maxtheflash@yahoo.com"
+  twitter: "https://twitter.com/Maxytheflash"
+  github: "https://github.com/Maxtheflash"
+  linkedin: "https://linkedin.com/in/brandenmaxwell"
 # Analytics
 analytics:
   provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
@@ -113,53 +113,36 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+  name             : "Branden Maxwell"
+  avatar           : "C:\Users\Branden\maxtheflash.github.io\assets\images\Profile Photo.png"
+  bio              : "Hi, I’m Branden! I’m a software developer with experience in Java, Python, .NET, and C++. I enjoy building innovative solutions that make a difference. When I’m not coding, you can find me gaming, fishing, or exploring the outdoors. Let’s connect and create something amazing!"
+  location         : "Wadsworth, OH"
+  email            :"Maxtheflash@yahoo.com
+  
+  # Nav links 
+  
+ nav_links:
+    - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Portfolio"
+    url: "/portfolio/"
+  - title: "Contact"
+    url: "/contact/"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/Maxytheflash"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://www.facebook.com/Maxytheflash"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
+      url: "https://github.com/Maxtheflash"
 
 # Reading Files
 include:
@@ -258,11 +241,10 @@ pagination:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -312,14 +294,10 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
   - scope:
-      path: ""
-      type: posts
+      path: ""    # Applies to all files
+      type: "posts"
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
+      layout: "single"
+      author: "Your Name"
+
