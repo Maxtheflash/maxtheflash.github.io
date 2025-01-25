@@ -1,0 +1,35 @@
+<p>Good highlighting:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">str</span> <span class="o">=</span> <span class="no">ARGV</span><span class="p">.</span><span class="nf">first</span>
+<span class="k">if</span> <span class="n">str</span>
+  <span class="n">str</span> <span class="o">=</span> <span class="n">str</span><span class="p">.</span><span class="nf">b</span><span class="p">[</span><span class="sr">/\A_(.*)_\z/</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+  <span class="k">if</span> <span class="n">str</span> <span class="ow">and</span> <span class="no">Gem</span><span class="o">::</span><span class="no">Version</span><span class="p">.</span><span class="nf">correct?</span><span class="p">(</span><span class="n">str</span><span class="p">)</span>
+    <span class="n">version</span> <span class="o">=</span> <span class="n">str</span>
+    <span class="no">ARGV</span><span class="p">.</span><span class="nf">shift</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Good (but dumb) highlighting:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>str = ARGV.first
+if str
+  str = str.b[/\A_(.*)_\z/, 1]
+  if str and Gem::Version.correct?(str)
+    version = str
+    ARGV.shift
+  end
+end
+</code></pre></div></div>
+
+<p>Bad highlighting:</p>
+
+<pre><code class="language-invalid">str = ARGV.first
+if str
+  str = str.b[/\A_(.*)_\z/, 1]
+  if str and Gem::Version.correct?(str)
+    version = str
+    ARGV.shift
+  end
+end
+</code></pre>
