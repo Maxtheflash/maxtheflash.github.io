@@ -1,48 +1,48 @@
 #settings for jekyll theme
 
 title: "Branden in a Flash: Developer Portfolio"
-description: Coding the future, One line at a time
+description: "Coding the future, One line at a time"
 lang: en
 url: https://maxtheflash.github.io
 base url: ""
-theme: minimal-mistakes-jekyll
+theme: "minimal-mistakes-jekyll"
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+  - "jekyll-feed"
+  - "jekyll-seo-tag"
 nav:
   - title: Home
-    url: /home/
+    url: "/home/"
   - title: About
-    url: /about/
+    url: "/about/"
   - title: Portfolio
-    url: /portfolio/
+    url: "/portfolio/"
   - title: Current Projects
-    url: /currentprojects/
+    url: "/currentprojects/"
   - title: Contact
-    url: /contact/
+    url: "/contact/"
 minimal-mistakes-skin: dark
 author:
   name: Branden Maxwell
-  avatar: /assets/images/Profile Photo.png
-  bio: Hi, I’m Branden! I’m a software developer with experience in Java, Python,
-    .NET, and C++. I enjoy building innovative solutions that make a difference.
-  location: Wadsworth, OH
-  email: Maxtheflash@yahoo.com
+  avatar: "/assets/images/Profile Photo.png"
+  bio: "Hi, I’m Branden! I’m a software developer with experience in Java, Python,
+    .NET, and C++. I enjoy building innovative solutions that make a difference."
+  location: "Wadsworth, OH"
+  email: "Maxtheflash@yahoo.com"
 social:
-  email: Maxtheflash@yahoo.com
-  twitter: https://twitter.com/Maxytheflash
-  github: https://github.com/Maxtheflash
-  linkedin: https://linkedin.com/in/brandenmaxwell
+  email: "Maxtheflash@yahoo.com"
+  twitter: "https://twitter.com/Maxytheflash"
+  github: "https://github.com/Maxtheflash"
+  linkedin: "https://linkedin.com/in/brandenmaxwell"
 footer:
   links:
     - label: Twitter
       icon: fab fa-fw fa-twitter-square
-      url: https://twitter.com/Maxytheflash
+      url: "https://twitter.com/Maxytheflash"
     - label: Facebook
       icon: fab fa-fw fa-facebook-square
-      url: https://www.facebook.com/Maxytheflash
+      url: "https://www.facebook.com/Maxytheflash"
     - label: GitHub
       icon: fab fa-fw fa-github
-      url: https://github.com/Maxtheflash
+      url: "https://github.com/Maxtheflash"
 markdown: kramdown
 permalink: pretty
