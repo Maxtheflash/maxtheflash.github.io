@@ -3,9 +3,9 @@
 title: "Branden in a Flash: Developer Portfolio"
 description: "Coding the future, One line at a time"
 lang: en
-url: https://maxtheflash.github.io
+url: "https://maxtheflash.github.io"
 base url: ""
-theme: "minimal-mistakes-jekyll"
+theme: "jekyll-theme-minimal"
 plugins:
   - "jekyll-feed"
   - "jekyll-seo-tag"
@@ -46,3 +46,5 @@ footer:
       url: "https://github.com/Maxtheflash"
 markdown: kramdown
 permalink: pretty
+exclude:
+  - "assets/css/style.css"
